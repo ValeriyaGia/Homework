@@ -66,4 +66,6 @@ while True:
     except KeyError:
         
      print(f'Номер месяца некорректен!', end ='.')
+    
+# Отличное решение
 
