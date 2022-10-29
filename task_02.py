@@ -21,3 +21,21 @@ total_population = cities_population [0][1] + cities_population [1][1] + cities_
 
 print (f'Итого размер населения - {total_population} человек')
 
+# Отлично! Есть ещё решения
+# Решение 1 через функцию с циклом for 
+def total_sum(lst):
+    num_lst = []
+    
+    for i in lst:
+        population = i[1]
+        num_lst.append(population)
+    
+    sum_lst = sum(num_lst)
+    
+    return sum_lst
+
+population_sum_1 = total_sum(town_population)
+
+
+# Решение 2 с суммой результатов индексации
+population_sum_2 = town_population[0][1] +  town_population[1][1] + town_population[2][1] + town_population[3][1]
