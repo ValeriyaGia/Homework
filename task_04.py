@@ -4,8 +4,8 @@
 # Выведите общее время звучания трех случайных песен в формате
 # Три песни звучат ХХХ минут
 # Для того, чтобы задавать случайные значения, используйсте модуль random
-# import random 
 
+import random as r 
 
 my_favorite_songs = [
     ['Waste a Moment', 3.03],
@@ -19,15 +19,12 @@ my_favorite_songs = [
     ['In This World', 4.02],
 ]
 
-import random
 
 time = []
-
 i=0
 while i <= 8:
     time.extend([my_favorite_songs[i][1]])
     i+=1
-   
 print (time)
+print (f'Три песни звучат - {sum(r.choices(time,k=3))} минут')
 
-print (f'Три песни звучат - {random.choice(time)+random.choice(time)+random.choice(time)} минут')
