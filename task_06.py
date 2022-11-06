@@ -27,3 +27,5 @@ for name, time in my_favorite_songs.items():
 print (range_song)
 
 print (f'Три песни звучат - {sum(r.choices(range_song,k=3))} минут')
+
+# Отлично!
